@@ -2,4 +2,4 @@ fastapi
 uvicorn
 sqlalchemy
 pandas
-psycopag2-binary
+psycopg2-binary
