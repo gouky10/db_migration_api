@@ -10,8 +10,8 @@ class DepartmentCreate(DepartmentBase):
 class Department(DepartmentBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
 
 class JobBase(BaseModel):
     title: str
@@ -22,8 +22,8 @@ class JobCreate(JobBase):
 class Job(JobBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
 
 class EmployeeBase(BaseModel):
     name: str
@@ -37,5 +37,5 @@ class EmployeeCreate(EmployeeBase):
 class Employee(EmployeeBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True

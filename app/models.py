@@ -17,7 +17,7 @@ class Employee(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     datetime = Column(DateTime)
-    Department_id = Column(Integer, ForeignKey('departments.id'))
+    department_id = Column(Integer, ForeignKey('departments.id'))
     job_id = Column(Integer, ForeignKey('jobs.id'))
 
     department = relationship('Department')
