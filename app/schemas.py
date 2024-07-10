@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class DepartmentBase(BaseModel):
     name: str
@@ -28,8 +29,8 @@ class Job(JobBase):
 class EmployeeBase(BaseModel):
     name: str
     datetime: datetime
-    department_id: int
-    job_id: int
+    department_id: Optional[int] = None 
+    job_id: Optional[int] = None 
 
 class EmployeeCreate(EmployeeBase):
     pass
