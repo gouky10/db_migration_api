@@ -42,14 +42,14 @@ POST /upload_employees/
 Upload a CSV file with employee data.
 
 ### Metrics Endpoints
--Hires Per Quarter
+- Hires Per Quarter
 
 ```bash
 GET /metrics/hires_per_quarter/
 ```
 Retrieve the number of employees hired for each job and department in the specified year, divided by quarter.
 
-### Departments Above Mean Hires
+- Departments Above Mean Hires
 
 ```bash
 GET /metrics/departments_above_mean/
